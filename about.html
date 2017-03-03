@@ -1,0 +1,36 @@
+---
+layout: base
+---
+<div class="page-wrapper">
+    <header class="page-header">
+        {% if site.compass.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        </div>
+        {% endif %}
+
+        {% if site.compass.author %}
+        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        {% endif %}
+
+        <div class="tagline-container"><p>nuestros productores</p></div>
+
+        <hr />
+
+        <ul class="fa-ul main-list">
+          <li class="main-list-item">
+            <span class="fa fa-truck fa-md main-list-item-icon"></span>
+            <a href="#">nuestros productores</a>
+          </li>
+          <li class="main-list-item">
+            <span class="fa fa-users fa-md main-list-item-icon"></span>
+            <a href="#">quiénes somos</a>
+          </li>
+        </ul>
+    </header>
+    <main class="farmers-main">
+      <div class="content">
+        {% include about.html %}
+      </div>
+    </main>
+</div>
